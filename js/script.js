@@ -15,11 +15,11 @@ $(function() {
 });
 
 function loadPhotos(){
-    $.getJSON(baseUrl + '/Me/links/', {'limit':100, 'offset': offset, 'fields':'{"title":1,"embed":1}'}, function(data) {
+    $.getJSON(baseUrl + '/query/getLink',{terms:'[embed.provider_name:\'instagram\']', limit:100, offset:offset, sort:'\'{"at":-1}\''},
+        function(data) {
         if(!data || !data.length) return;
         var html = '';
-        for(var i in data)
-        {
+        for(var i in data) {
             if(!data[i].embed || data[i].embed.type != "photo") continue;
             var p = data[i];
             html += '<li><a id="url-'+p._id+'" href="#" title=""><img src="'+p.embed.url+'" target="_blank" /><span id="title-'+p._id+'"></span></a></li>';
@@ -31,7 +31,6 @@ function loadPhotos(){
                     $("#url-"+id).attr("href",encounters[0].link);
                 });
             });
-            console.log(data[i]);
         }
         $("#test").append(html);
     });
