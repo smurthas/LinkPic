@@ -1,0 +1,1 @@
+This is a minimal link photo viewer for the locker project.
