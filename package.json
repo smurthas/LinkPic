@@ -1,0 +1,15 @@
+{
+    "name": "linkpic",
+    "description": "Viewer of pics from your links",
+    "version": "0.0.2",
+    "author": "Jeremie Miller",
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://creativecommons.org/licenses/MIT/"
+    }],
+    "viewer":"links",
+    "repository":{
+        "type": "app",
+        "static":"true"
+    }
+}
