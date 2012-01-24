@@ -3,19 +3,19 @@
     "description": "See Instagram photos your friends are posting to Twitter and Facebook.",
     "version": "0.0.3",
     "author": {
-        "name:"Simon Murtha-Smith"
-    }
+        "name":"Simon Murtha-Smith"
+    },
     "licenses": [{
         "type": "MIT",
         "url": "http://creativecommons.org/licenses/MIT/"
     }],
     "viewer":"links",
     "repository":{
-        "title": "InstaLinks"
+        "title": "InstaLinks",
         "type": "app",
         "static":"true",
         "uses": {
-            "types":["photos"],
+            "types":["links"],
             "services":["facebook","twitter"]
         }
     }
