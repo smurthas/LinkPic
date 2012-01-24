@@ -22,7 +22,7 @@ function loadPhotos(){
         for(var i in data) {
             if(!data[i].embed || data[i].embed.type != "photo") continue;
             var p = data[i];
-            html += '<li><a id="url-'+p._id+'" href="#" title=""><img src="'+p.embed.url+'" target="_blank" /><span id="title-'+p._id+'"></span></a></li>';
+            html += '<li><a id="url-'+p._id+'" href="#" title="" target="_blank"><img src="'+p.embed.url+'" /><span id="title-'+p._id+'"></span></a></li>';
             $(function() {
                 var id = p._id;
                 $.getJSON(baseUrl + '/Me/links/encounters/'+p._id, function(encounters) {
