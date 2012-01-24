@@ -1,8 +1,10 @@
 {
     "name": "instalinks",
     "description": "See Instagram photos your friends are posting to Twitter and Facebook.",
-    "version": "0.0.2",
-    "author": "Simon Murtha-Smith",
+    "version": "0.0.3",
+    "author": {
+        "name:"Simon Murtha-Smith"
+    }
     "licenses": [{
         "type": "MIT",
         "url": "http://creativecommons.org/licenses/MIT/"
