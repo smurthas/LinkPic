@@ -1,8 +1,8 @@
 {
     "name": "linkpic",
-    "description": "Viewer of pics from your links",
+    "description": "See Instagram photos your friends are posting to Twitter and Facebook.",
     "version": "0.0.2",
-    "author": "Jeremie Miller",
+    "author": "Simon Murtha-Smith",
     "licenses": [{
         "type": "MIT",
         "url": "http://creativecommons.org/licenses/MIT/"
@@ -10,6 +10,10 @@
     "viewer":"links",
     "repository":{
         "type": "app",
-        "static":"true"
+        "static":"true",
+        "uses": {
+            "types":["photos"],
+            "services":["facebook","twitter"]
+        }
     }
 }
