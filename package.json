@@ -1,6 +1,5 @@
 {
     "name": "instalinks",
-    "description": "See Instagram photos your friends are posting to Twitter and Facebook.",
     "version": "0.0.3",
     "author": {
         "name":"Simon Murtha-Smith"
@@ -11,6 +10,7 @@
     }],
     "viewer":"links",
     "repository":{
+        "description": "See Instagram photos your friends are posting to Twitter and Facebook.",
         "title": "InstaLinks",
         "type": "app",
         "static":"true",
